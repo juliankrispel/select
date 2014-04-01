@@ -1,0 +1,31 @@
+<!-- Import Polymer -->
+<base href="/"/>
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/polymer-selector/polymer-selector.html">
+
+<!-- Define your custom element -->
+<polymer-element name="b-select" extends="polymer-selector" on-polymer-select="{{selectionChange}}" attributes="name">
+
+    <template>
+        <h1>{{name}}</h1>
+        <shadow></shadow>
+    </template>
+
+    <script>
+        Polymer('b-select', {
+            selectionChange: function(e, detail) {
+                if (detail.isSelected) {
+                    var i = detail.item;
+                    // find nested selected item
+                    console.log('dwq');
+
+//                    while (i.selectedItem) {
+//                        i = i.selectedItem;
+//                    }
+                    this.selectedItem = i;
+                }
+            }
+        });
+    </script>
+
+    </polymer-element>

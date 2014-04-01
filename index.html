@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>&lt;my-element&gt;</title>
+    <base href="/"/>
 
     <!-- Importing Web Component's Polyfill -->
     <script src="bower_components/platform/platform.js"></script>
 
     <!-- Importing Custom Elements -->
-    <link rel="import" href="src/my-element.html">
+    <link rel="import" href="src/b-select.html">
 </head>
 <body>
 
     <!-- Using Custom Elements -->
-    <my-element name="Zeno"></my-element>
+    <b-select name="Zeno">
+        <span>One Thing</span>
+        <span>Another Thing</span>
+    </b-select>
 
 </body>
 </html>
