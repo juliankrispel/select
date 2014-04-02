@@ -19,6 +19,6 @@
   "dependencies": {
     "platform": "Polymer/platform#~0.2.0",
     "polymer": "Polymer/polymer#~0.2.0",
-    "polymer-selector": "*"
+    "polymer-selector": "git@github.com:PolymerLabs/polymer-selector.git"
   }
 }
